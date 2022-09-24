@@ -1,0 +1,32 @@
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 2rem;
+}
+
+.flexbox-item {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+header {
+    margin: 2rem;
+}
+
+footer {
+    margin: 2rem;
+}
+
+.section-title {
+    display: block;
+}
+
+.link {
+    display: block;
+}
