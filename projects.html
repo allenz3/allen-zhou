@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Notes on Allen Zhou's Microsoft engineering work: Direct Transfer, Consult to Queue, Playwright automation, and production reliability." />
+        <title>Projects | Allen Zhou</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <div class="site">
+            <header class="site-header">
+                <a class="site-name" href="index.html">Allen Zhou</a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html">About</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html" aria-current="page">Projects</a>
+                </nav>
+            </header>
+            <main id="main" class="projects-page">
+                <h1>Projects</h1>
+                <p>A few things I worked on at Microsoft. These were team efforts; the notes below describe my contributions.</p>
+                <nav class="project-index" aria-label="Projects on this page">
+                    <a href="#direct-transfer">Direct Transfer</a>
+                    <a href="#consult-to-queue">Consult to Queue</a>
+                    <a href="#test-automation">Test automation</a>
+                    <a href="#consult-panel">Consult panels</a>
+                    <a href="#legacy-migration">Legacy migration</a>
+                </nav>
+
+                <section id="direct-transfer" aria-labelledby="direct-title">
+                    <h2 id="direct-title">Direct Transfer</h2>
+                    <p class="entry-meta">Dynamics 365 Conversation Control · Primary frontend owner</p>
+                    <p>Direct Transfer lets a service representative transfer an active conversation to another representative without first starting a consultation. I owned the frontend for approximately six months, from implementation through global production rollout.</p>
+                    <p>I built it in React, TypeScript, and Redux, integrating REST APIs and new state handling. I also refactored shared transfer logic so warm and cold transfers could reuse the same architecture, including error recovery and configurable voice, messaging, and timeout behavior.</p>
+                    <ul>
+                        <li>Added 100+ unit tests, with integration, critical E2E, accessibility, and manual validation.</li>
+                        <li>Released through private preview, pre-production validation, and staged regional deployment using feature flags and telemetry.</li>
+                        <li>Production telemetry showed approximately 5–10 seconds lower average resolution time associated with the workflow.</li>
+                        <li>No known customer incidents were attributable specifically to Direct Transfer after the completed launch.</li>
+                    </ul>
+                    <p class="source-note"><a href="https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/enable-direct-transfer-conversations">Microsoft Learn: Enable direct transfer of conversations</a><br />Public general availability: <time datetime="2025-07-31">July 31, 2025</time>.</p>
+                </section>
+
+                <section id="consult-to-queue" aria-labelledby="consult-title">
+                    <h2 id="consult-title">Consult to Queue</h2>
+                    <p class="entry-meta">Dynamics 365 Conversation Control · Primary frontend owner</p>
+                    <p>This feature lets representatives consult a queue so the service can find an eligible expert, instead of requiring them to know who to contact. I led substantial frontend development and ownership across approximately a year of planning, implementation, testing, and rollout.</p>
+                    <p>I generalized the existing consult architecture to share logic between individual and queue consultation, integrated the queue-routing endpoint, and handled asynchronous participant events and conversation-state changes.</p>
+                    <ul>
+                        <li>Added or maintained hundreds of unit tests around the consult architecture and supported approximately a dozen integration scenarios.</li>
+                        <li>Validated accessibility, localization, right-to-left layouts, and responsive behavior during staged global rollout.</li>
+                        <li>Improved response performance by approximately 2–3 seconds.</li>
+                    </ul>
+                    <p>Direct Transfer and Consult to Queue together represented approximately 60–70% of weekly activity within the relevant Conversation Control workflows.</p>
+                    <p class="source-note"><a href="https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/select-representative-automatically-consult-queue">Microsoft Learn: Select a representative automatically in consult to queue</a><br />Enhanced capability general availability: <time datetime="2026-01-31">January 31, 2026</time>.</p>
+                </section>
+
+                <section id="test-automation" aria-labelledby="automation-title">
+                    <h2 id="automation-title">Browser-based regression testing</h2>
+                    <p class="entry-meta">Intent Assist · Playwright MCP, Azure DevOps</p>
+                    <p>Built AI-assisted browser automation for approximately 30–40 end-to-end scenarios across first-party workflows, third-party integrations, voice, CRM, customer-facing flows, and failure states.</p>
+                    <p>The tooling used persistent browser profiles and pre-warmed authentication for multi-user testing. I standardized configuration and result schemas, added automated reporting, and integrated validation into Azure DevOps CI/CD.</p>
+                    <p>Recurring regression-validation time fell from approximately two hours to under 30 minutes, a reduction of more than 75%.</p>
+                    <p>During my final several months, AI-assisted development also increased my average PR submission cadence from roughly two per week to two per day. Code review, testing, accessibility checks, and release validation remained part of the workflow.</p>
+                </section>
+
+                <section id="consult-panel" aria-labelledby="panel-title">
+                    <h2 id="panel-title">Dual-panel consult experience</h2>
+                    <p class="entry-meta">Dynamics 365 Conversation Control · React</p>
+                    <p>Added a second collapsible consult panel and refactored the existing UI and API logic to reuse shared infrastructure. Included unit tests, telemetry, accessibility, and keyboard/focus handling, then released behind feature flags through a staged regional rollout.</p>
+                    <p>Production telemetry showed approximately 5–10 seconds faster active-consult resolution.</p>
+                </section>
+
+                <section id="legacy-migration" aria-labelledby="migration-title">
+                    <h2 id="migration-title">Legacy consult migration</h2>
+                    <p class="entry-meta">Dynamics 365 Conversation Control · Production reliability</p>
+                    <p>Helped migrate HP production scenarios off a legacy consultation path once Direct Transfer provided a simpler workflow. Used existing configuration switches, canary deployment, telemetry, and rollback controls to retire several years of technical debt.</p>
+                    <p>After approximately two to three weeks of stability, the migration eliminated roughly one to two recurring legacy-consult incidents per month and reduced the support burden.</p>
+                </section>
+
+                <p class="measurement-note">Performance figures are approximate, based on production telemetry and engineering measurements from my work.</p>
+            </main>
+            <footer class="site-footer">
+                <span>Allen Zhou</span>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/allen-zhou-2022">LinkedIn</a>
+                    <a href="https://github.com/allenz3">GitHub</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

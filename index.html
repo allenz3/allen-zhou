@@ -1,54 +1,49 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Allen Zhou's Portfolio Website</title>
+        <meta name="description" content="Allen Zhou is a software engineer with four years of experience at Microsoft, working on Dynamics 365, frontend systems, and full-stack engineering." />
+        <title>About | Allen Zhou</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header>
-            <h1>Allen Zhou</h1>
-            <h3>Software Engineer @ Microsoft</h3>
-        </header>
-        <div class="flexbox-container">
-            <div class="flexbox-item">
-                <h2 class="section-title">Experience</h2>
-                <ul>
-                    <li>Dynamics 365 front-end software engineer working on CRM features</li>
-                </ul>
-            </div>
-            <div class="flexbox-item">
-                <h2 class="section-title">Projects</h2>
-                <ul>
-                    <li>Created a <a href="https://allenz3.github.io/cbr-map-interface/">web app</a> for Columbia Basin Research at the University of Washington</li>
-                </ul>
-            </div>
-            <div class="flexbox-item">
-                <h2 class="section-title">Skills</h2>
-                <ul>
-                    <li>Front-End Programming: HTML, CSS, JavaScript, TypeScript, React, Redux</li>
-                    <li>Back-End Programming: Java, Microsoft SQL Server</li>
-                    <li>Data Analysis: Python, R</li>
-                    <li>Version Control: Git</li>
-                    <li>UX/UI Design: Figma</li>
-                </ul>
-            </div>
-            <div class="flexbox-item">
-                <h2 class="section-title">Education</h2>
-                <ul>
-                    <li>Major: Human Centered Design & Engineering</li>
-                    <li>Degree Option: Human-Computer Interaction</li>
-                    <li>Minor: Informatics</li>
-                </ul>
-            </div>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <div class="site">
+            <header class="site-header">
+                <a class="site-name" href="index.html">Allen Zhou</a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html" aria-current="page">About</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                </nav>
+            </header>
+            <main id="main">
+                <img class="profile-photo" src="assets/allen-zhou.jpg" alt="Allen Zhou" width="200" height="200" decoding="async" />
+                <h1>Hi, I'm Allen.</h1>
+                <p>I'm a software engineer. From August 2022 to September 2026, I worked at Microsoft on customer-service software in Dynamics 365.</p>
+                <p>Most of that time was spent on Conversation Control, the interface service representatives use to manage live customer interactions. I worked on consult and transfer features, primarily in React and TypeScript, and took on more of the design, testing, rollout, and production support over time.</p>
+                <p>Later, I moved to Intent Assist, where I worked across the stack on AI-assisted customer-service workflows and built browser automation with Playwright MCP.</p>
+
+                <section aria-labelledby="background-title">
+                    <h2 id="background-title">Background</h2>
+                    <p>My academic focus was Human Centered Design &amp; Engineering, with a Human-Computer Interaction degree option and a minor in Informatics. That background informs how I think about interfaces and the people using them.</p>
+                    <p>Before Microsoft, I also built a <a href="https://allenz3.github.io/cbr-map-interface/">web application for Columbia Basin Research</a> at the University of Washington.</p>
+                </section>
+
+                <section aria-labelledby="more-title">
+                    <h2 id="more-title">More about my work</h2>
+                    <p>My <a href="resume.html">resume</a> covers my experience and skills. I've also written up a few <a href="projects.html">projects</a>, including Direct Transfer, Consult to Queue, and regression-test automation.</p>
+                    <p>You can find me on <a href="https://www.linkedin.com/in/allen-zhou-2022">LinkedIn</a> or see my public code on <a href="https://github.com/allenz3">GitHub</a>.</p>
+                </section>
+            </main>
+            <footer class="site-footer">
+                <span>Allen Zhou</span>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/allen-zhou-2022">LinkedIn</a>
+                    <a href="https://github.com/allenz3">GitHub</a>
+                </div>
+            </footer>
         </div>
-        <footer>
-            <h3>Links:</h3>
-            <a class="link" href="https://github.com/allenz3">GitHub</a>
-            <a class="link" href="https://www.linkedin.com/in/allen-zhou-2022">LinkedIn</a>
-        </footer>
-        <script src=""></script>
     </body>
 </html>

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Allen Zhou's software engineering experience at Microsoft, technical skills, and education." />
+        <title>Resume | Allen Zhou</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <div class="site">
+            <header class="site-header">
+                <a class="site-name" href="index.html">Allen Zhou</a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html">About</a>
+                    <a href="resume.html" aria-current="page">Resume</a>
+                    <a href="projects.html">Projects</a>
+                </nav>
+            </header>
+            <main id="main" class="resume-page">
+                <div class="page-heading">
+                    <h1>Resume</h1>
+                    <button id="print-resume" class="print-button" type="button">Print / save PDF</button>
+                </div>
+                <p class="document-links screen-only">
+                    <a href="documents/Allen_Zhou_Resume_Software_Engineer.pdf" type="application/pdf">Resume (PDF)</a>
+                    · <a href="documents/Allen_Zhou_Cover_Letter_Software_Engineer.pdf" type="application/pdf">Cover letter (PDF)</a>
+                </p>
+                <div class="print-intro">
+                    <p class="print-name">Allen Zhou</p>
+                    <p>Software Engineer</p>
+                    <p><a href="https://www.linkedin.com/in/allen-zhou-2022">linkedin.com/in/allen-zhou-2022</a> · <a href="https://github.com/allenz3">github.com/allenz3</a></p>
+                </div>
+                <p>Software engineer with four years at Microsoft, working on frontend and full-stack customer-service software. Experience owning features from technical design through global rollout, monitoring, and production support.</p>
+
+                <section id="experience" aria-labelledby="experience-title">
+                    <h2 id="experience-title">Experience</h2>
+                    <div class="entry-heading">
+                        <h3>Microsoft · Software Engineer</h3>
+                        <p class="date"><time datetime="2022-08">Aug 2022</time> – <time datetime="2026-09">Sep 2026</time></p>
+                    </div>
+                    <p class="entry-meta">Redmond, Washington</p>
+
+                    <article class="role">
+                        <h4>Intent Assist</h4>
+                        <p class="entry-meta"><time datetime="2026-01">Jan 2026</time> – <time datetime="2026-09">Sep 2026</time></p>
+                        <ul>
+                            <li>Worked across the stack on AI-assisted customer-service workflows, CRM integrations, production debugging, and DRI/on-call responsibilities.</li>
+                            <li>Built approximately 30–40 Playwright MCP end-to-end scenarios covering first-party workflows, third-party integrations, voice, CRM, and failure states.</li>
+                            <li>Integrated repeatable browser validation and automated reporting into Azure DevOps CI/CD. Reduced recurring regression-validation time from approximately two hours to under 30 minutes.</li>
+                        </ul>
+                    </article>
+
+                    <article class="role">
+                        <h4>Dynamics 365 Omnichannel / Conversation Control</h4>
+                        <p class="entry-meta"><time datetime="2022-08">Aug 2022</time> – <time datetime="2025-12">Dec 2025</time></p>
+                        <ul>
+                            <li>Primary frontend owner for Direct Transfer and Consult to Queue, using React, TypeScript, Redux, and REST APIs. Owned design, implementation, testing, accessibility, localization, and staged global rollout.</li>
+                            <li>Refactored shared consult and transfer architecture to support individual and queue routing, asynchronous conversation states, error recovery, and configurable voice and messaging behavior.</li>
+                            <li>Added 100+ unit tests for Direct Transfer and added or maintained hundreds around the consult architecture. Supported integration, E2E, accessibility, and manual validation under an approximately 80% team unit-test coverage standard.</li>
+                            <li>Production telemetry showed approximately 5–10 seconds lower average resolution time with Direct Transfer; Consult to Queue improved response performance by approximately 2–3 seconds.</li>
+                            <li>Served as DRI/on-call for a globally deployed system receiving approximately 20+ production incidents per week. Used KQL, telemetry, browser debugging, and live reproduction to investigate issues and coordinate fixes.</li>
+                            <li>Maintained the Conversation Control Engineering Hub, delivered three technical knowledge-transfer presentations, and helped transfer ownership to another Microsoft engineering team.</li>
+                        </ul>
+                    </article>
+                    <p>Supported enterprise customer scenarios including T-Mobile, HP, Xiaomi, and Lenovo.</p>
+                    <p class="screen-only"><a href="projects.html">Read more about these projects</a></p>
+                </section>
+
+                <section id="skills" aria-labelledby="skills-title">
+                    <h2 id="skills-title">Skills</h2>
+                    <dl class="skills-list">
+                        <div><dt>Frontend</dt><dd>React, TypeScript, JavaScript, Redux, HTML, CSS, REST APIs</dd></div>
+                        <div><dt>Testing</dt><dd>Jasmine, Jest, Playwright, Playwright MCP, unit, integration, E2E, and accessibility testing</dd></div>
+                        <div><dt>Production &amp; delivery</dt><dd>KQL, telemetry, incident response, Git, Azure DevOps, CI/CD, feature flags, staged releases</dd></div>
+                        <div><dt>UI &amp; design</dt><dd>Figma, Storybook, accessibility, localization, internationalization, RTL, responsive UI</dd></div>
+                        <div><dt>Additional</dt><dd>Java, Microsoft SQL Server, Python, R, AI-assisted development and coding-agent tooling</dd></div>
+                    </dl>
+                </section>
+
+                <section aria-labelledby="education-title">
+                    <h2 id="education-title">Education</h2>
+                    <p>Human Centered Design &amp; Engineering<br />Degree option: Human-Computer Interaction<br />Minor: Informatics</p>
+                </section>
+
+                <section aria-labelledby="earlier-title">
+                    <h2 id="earlier-title">Earlier project</h2>
+                    <p>Built a <a href="https://allenz3.github.io/cbr-map-interface/">web application for Columbia Basin Research</a> at the University of Washington.</p>
+                </section>
+            </main>
+            <footer class="site-footer">
+                <span>Allen Zhou</span>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/allen-zhou-2022">LinkedIn</a>
+                    <a href="https://github.com/allenz3">GitHub</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
